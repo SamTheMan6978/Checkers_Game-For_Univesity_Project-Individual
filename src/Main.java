@@ -4,6 +4,6 @@ public class Main {
     public static void main(String[] args) {
 
         // player_Possible_Movelist.player_Moves(3);
-        checker_Board.randomized_Checker_Board();
+        checker_Board.Checker_Board();
     }
 }

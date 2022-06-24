@@ -2,7 +2,7 @@ import java.util.*;
 
 public class player_Move_List {
 
-    public static void player_Moves(int num_Of_Moves) {
+    public static String [] player_Moves(int num_Of_Moves) {
 
         Scanner input = new Scanner(System.in);
         String[] user_Move_Input = new String[num_Of_Moves];
@@ -22,5 +22,6 @@ public class player_Move_List {
                 }
             }
         }
+        return user_Move_Input;
     }
 }
