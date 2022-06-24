@@ -1,6 +1,6 @@
 import java.util.*;
 
-public class player_Possible_Movelist {
+public class player_Move_List {
 
     public static void player_Moves(int num_Of_Moves) {
 
