@@ -1,3 +1,4 @@
+// Class responsible for holding the initial board
 public class checker_Board {
 
     public static char[][] Checker_Board() {
@@ -14,7 +15,7 @@ public class checker_Board {
                 {'.', '-', '.', '-', '.', '-', '.', '-'},
         };
 
-        // Printing function for initial Graph
+        // Printing function for initial Graph (for comparison)
         for (int i = 0; i < 64; i++) {
             int x = i % 8;
             int y = (i - x) / 8;

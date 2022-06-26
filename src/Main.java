@@ -3,7 +3,9 @@
 public class Main {
     public static void main(String[] args) {
 
-        // player_Possible_Movelist.player_Moves(3);
-        checker_Board.Checker_Board();
+        // Main class activates the program in a sequence of methods
+        move_List_Processing.Move_Process( checker_Board.Checker_Board(),player_Inputs.user_Checker_Input(),player_Inputs.player_Move_List_Input(player_Inputs.player_Moves_Input()));
+
+
     }
 }
