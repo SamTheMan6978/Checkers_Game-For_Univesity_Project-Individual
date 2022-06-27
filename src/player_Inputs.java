@@ -19,34 +19,34 @@ public class player_Inputs {
                 no_Of_Moves = input.nextInt();
             }
         }
-    return no_Of_Moves;}
+        return no_Of_Moves;
+    }
 
 
     // Method responsible for getting the player move list into a String Type Array
-        public static String [] player_Move_List_Input(int no_Of_Moves) {
+    public static String[] player_Move_List_Input(int no_Of_Moves) {
 
-            String[] user_Move_Input = new String[no_Of_Moves];
-            Scanner input = new Scanner(System.in);
+        String[] user_Move_Input = new String[no_Of_Moves];
+        Scanner input = new Scanner(System.in);
 
-            for (int i = 0; i < no_Of_Moves; i++) {
+        for (int i = 0; i < no_Of_Moves; i++) {
 
-                System.out.println("Please enter your move: ");
-                user_Move_Input[i] = input.nextLine();
+            System.out.println("Please enter your move: ");
+            user_Move_Input[i] = input.nextLine();
 
-                while (true) {
-                    if (user_Move_Input[i].contains("-") || user_Move_Input[i].contains("x"))
-                        break;
-
-                    else {
-                        System.out.println("Your move input is incorrect, kindly use 'x' for a jump and '-' for a move: ");
-                        user_Move_Input[i] = input.nextLine();
-                    }
+            while (true) {
+                if (user_Move_Input[i].contains("-") || user_Move_Input[i].contains("x")) {
+                    break;
+                } else {
+                    System.out.println("Your move input is incorrect, kindly use 'x' for a jump and '-' for a move: ");
+                    user_Move_Input[i] = input.nextLine();
                 }
             }
-            return user_Move_Input;
         }
+        return user_Move_Input;
+    }
 
-        // Method responsible for getting the user checker for the first mover
+    // Method responsible for getting the user checker for the first mover
     public static char user_Checker_Input() {
         Scanner input = new Scanner(System.in);
 
