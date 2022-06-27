@@ -48,11 +48,29 @@ public class move_List_Processing {
                         first_Position = player_Move_List[i].substring(0, 1);
                     }
 
-                    // Conditional statement to assess whether to place a white or black checker piece based on initial user checker input
+                    // Conditional statement to assess whether to place a white or black checker piece based on initial user checker input, this case is for 'w' char
+
                     if (user_Checker_Input == 'w')
                         if (first_Position.equals(checkers_Numbered_Board[k][j]))
+                            if (!checkers_Numbered_Board[k][j].equals("W") || !checkers_Numbered_Board[k][j].equals("w") || !checkers_Numbered_Board[k][j].equals("B") || !checkers_Numbered_Board[k][j].equals("b"))
+                                if (!first_Position.equals(checkers_Numbered_Board[0][j])) {
 
-                            Checker_Board[j][k] = white_Pieces[(int) (Math.random() * 2)];
+                                    Checker_Board[j][k] = white_Pieces[1];
+
+                                } else {
+                                    System.out.println("Invalid Move.");
+                                }
+
+                    // Conditional statement in case of character 'b'
+                    if (user_Checker_Input == 'b')
+                        if (first_Position.equals(checkers_Numbered_Board[k][j]))
+                            if (!checkers_Numbered_Board[k][j].equals("W") || !checkers_Numbered_Board[k][j].equals("w") || !checkers_Numbered_Board[k][j].equals("B") || !checkers_Numbered_Board[k][j].equals("b"))
+                                if (!first_Position.equals(checkers_Numbered_Board[7][j])) {
+
+                                    Checker_Board[j][k] = black_Pieces[1];
+                                } else {
+                                    System.out.println("Invalid Move.");
+                                }
                 }
 
         System.out.println(first_Position);
